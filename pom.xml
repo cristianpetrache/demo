@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>at.herold.demo</groupId>
+    <artifactId>appRoot</artifactId>
+    <packaging>pom</packaging>
+    <version>2.0-SNAPSHOT</version>
+    <name>appRoot</name>
+    <url>http://maven.apache.org</url>
+    
+    <modules>
+        <module>framework/fmCommon</module>
+        <module>framework/fmLib</module>
+        <module>module/modCommon</module>
+        <module>module/modABC</module>
+        <module>module/modDEF</module>
+        <module>webapp/backend</module>
+    </modules>
+    
+    <dependencyManagement>
+        <dependencies>
+            
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${org.springframework.boot.spring-boot-starter-web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.junit.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>at.herold.demo</groupId>
+                <artifactId>fmCommon</artifactId>
+                <version>${at.herold.demo.app.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>at.herold.demo</groupId>
+                <artifactId>fmLib</artifactId>
+                <version>${at.herold.demo.app.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>at.herold.demo</groupId>
+                <artifactId>modCommon</artifactId>
+                <version>${at.herold.demo.app.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>at.herold.demo</groupId>
+                <artifactId>modABC</artifactId>
+                <version>${at.herold.demo.app.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>at.herold.demo</groupId>
+                <artifactId>modDEF</artifactId>
+                <version>${at.herold.demo.app.version}</version>
+            </dependency>
+            
+        </dependencies>
+    </dependencyManagement>
+    
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        
+        <org.springframework.boot.spring-boot-starter-web.version>2.0.1.RELEASE</org.springframework.boot.spring-boot-starter-web.version>
+        <junit.junit.version>4.12</junit.junit.version>
+        
+        <at.herold.demo.app.version>2.0-SNAPSHOT</at.herold.demo.app.version>
+    </properties>
+  
+</project>
