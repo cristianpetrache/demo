@@ -15,9 +15,7 @@ public class MODCallableDEFImplTest
    public void testMessage() {
       List<String> result = modCallable.call(TEST_MESSAGE);
       assert result.stream()
-            .filter(string -> string.contains(modCallable.getClass().getCanonicalName()))
-            .findAny()
-            .isPresent();
+            .anyMatch(string -> string.contains(modCallable.getClass().getCanonicalName()));
       assert result.stream()
             .filter(string -> string.endsWith(TEST_MESSAGE))
             .findAny()
