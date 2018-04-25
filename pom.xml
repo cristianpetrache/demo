@@ -27,6 +27,14 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${org.springframework.boot.spring-boot-starter-web.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-bom</artifactId>
+                <version>${org.apache.logging.log4j.log4j-bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
             
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -89,6 +97,7 @@
         <org.springframework.spring-boot-starter-test.version>2.0.1.RELEASE</org.springframework.spring-boot-starter-test.version>
         <junit.junit.version>4.12</junit.junit.version>
         <org.mockito.mockito-core.version>2.15.0</org.mockito.mockito-core.version>
+        <org.apache.logging.log4j.log4j-bom.version>2.11.0</org.apache.logging.log4j.log4j-bom.version>
     </properties>
   
 </project>
