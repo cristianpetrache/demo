@@ -87,8 +87,6 @@
         <org.springframework.spring-boot-starter-test.version>2.0.1.RELEASE</org.springframework.spring-boot-starter-test.version>
         <junit.junit.version>4.12</junit.junit.version>
         <org.mockito.mockito-core.version>2.15.0</org.mockito.mockito-core.version>
-        
-        <at.herold.demo.app.version>2.0-SNAPSHOT</at.herold.demo.app.version>
     </properties>
   
 </project>
