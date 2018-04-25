@@ -3,7 +3,6 @@
     
     <modelVersion>4.0.0</modelVersion>
     
-    <groupId>at.herold.demo</groupId>
     <artifactId>modDEF</artifactId>
     <packaging>jar</packaging>
     <name>modDEF</name>

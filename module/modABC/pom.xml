@@ -3,7 +3,6 @@
     
     <modelVersion>4.0.0</modelVersion>
     
-    <groupId>at.herold.demo</groupId>
     <artifactId>modABC</artifactId>
     <packaging>jar</packaging>
     <name>modABC</name>

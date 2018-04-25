@@ -27,11 +27,26 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${org.springframework.boot.spring-boot-starter-web.version}</version>
             </dependency>
+            
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${org.springframework.spring-boot-starter-test.version}</version>
+                <scope>test</scope>
+            </dependency>
 
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${org.mockito.mockito-core.version}</version>
+                <scope>test</scope>
             </dependency>
 
             <dependency>
@@ -69,7 +84,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         
         <org.springframework.boot.spring-boot-starter-web.version>2.0.1.RELEASE</org.springframework.boot.spring-boot-starter-web.version>
+        <org.springframework.spring-boot-starter-test.version>2.0.1.RELEASE</org.springframework.spring-boot-starter-test.version>
         <junit.junit.version>4.12</junit.junit.version>
+        <org.mockito.mockito-core.version>2.15.0</org.mockito.mockito-core.version>
         
         <at.herold.demo.app.version>2.0-SNAPSHOT</at.herold.demo.app.version>
     </properties>
